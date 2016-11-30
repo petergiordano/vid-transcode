@@ -5,6 +5,8 @@
 # http://www.surlyjake.com/blog/2010/08/10/script-to-run-handbrake-recursively-through-a-folder-tree/
 # Modified to restore metadata for creation dates for Digital Asset Management apps (e.g. Lightroom, iPhoto)
 
+# Place script in /usr/local/scripts (or your choice)
+# Make sure location is in your $PATH
 # Script assumes HandBrakeCLI is in your $PATH
 
 # Use PRESET if using HandBrake CLI
