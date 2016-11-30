@@ -29,7 +29,8 @@ fi
 
 
 
-# This code is from https://47ronin.com/2014/04/07/preserve-photo-video-media-metadata-transcoding/
+# Credit for this code from 47Ronin -- https://47ronin.com/2014/04/07/preserve-photo-video-media-metadata-transcoding/
+# Require ffmpeg
 # Should work on *.AVI files -- but not good if folder contains other filename extensions
 # Should PRESERVE meta data
 # ls -p *.AVI | xargs -I {} /usr/local/bin/ffmpeg -i {} -y -vcodec copy -acodec libfaac -map_metadata 0 {}.mp4
