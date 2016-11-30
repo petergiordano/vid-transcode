@@ -14,14 +14,14 @@
 PRESET=“Universal”
 
 if [ -z "$1" ] ; then
-    TRANSCODEDIR="."
+    CONVERTDIR="."
 else
-    TRANSCODEDIR="$1"
+    CONVERTDIR="$1"
 fi
 
 
 # Ignores dot files, Uses hardcoded file extensions, restores the metadata, then REMOVES original file
-  find "$TRANSCODEDIR"/*  \( ! -regex '.*/\..*' \) -type f \( -name "*.avi" -or -name "*.AVI" -or -name "*.wmv" -or -name "*.WMV" -or -name "*.3gp" -or -name "*.3g2" \) -exec bash -c 'HandBrakeCLI -i "$1" -o "${1%\.*}"-converted.mp4 --preset="$PRESET" && touch -r "$1" "${1%\.*}"-converted.mp4 && rm "$1"' __$
+  find "$CONVERTDIR"/*  \( ! -regex '.*/\..*' \) -type f \( -name "*.avi" -or -name "*.AVI" -or -name "*.wmv" -or -name "*.WMV" -or -name "*.3gp" -or -name "*.3g2" \) -exec bash -c 'HandBrakeCLI -i "$1" -o "${1%\.*}"-converted.mp4 --preset="$PRESET" && touch -r "$1" "${1%\.*}"-converted.mp4 && rm "$1"' __$
 
 
 # This one looks for only one type of file extension
