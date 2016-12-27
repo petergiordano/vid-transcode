@@ -29,7 +29,7 @@ Handbrake Encoding Presets:
 If using HandBrakeCLI, then set PRESET to the encoding option of your choice.
 Change PRESET to specify a different handbrake preset. 
 List HandBrake presets by running: `HandBrakeCLI --preset-list`
-HandBrakeCLI docs are here: `https://handbrake.fr/docs/en/latest/cli/cli-guide.html`
+HandBrakeCLI docs are here: https://handbrake.fr/docs/en/latest/cli/cli-guide.html
 
 
 # Warnings
