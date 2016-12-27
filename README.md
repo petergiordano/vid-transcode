@@ -15,7 +15,7 @@ http://www.surlyjake.com/blog/2010/08/10/script-to-run-handbrake-recursively-thr
 
 Usage: `foldermp4convert.sh [*directory_name*]`
 
-If `*directory_name*` is not set, script executes in current directory
+If `directory_name` is not set, script executes in current directory
 
 Edit script and update `*PRESET*` variable to match encoding desired
 If Encoding is not MP4, then consider changing the output filename structure.
