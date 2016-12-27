@@ -1,5 +1,5 @@
 # foldermp4convert.sh
-Command line script to batch encode AVI and WMV files into MP4 and *retain metadata*
+Command line script to batch encode AVI and WMV files into a new MP4 and *retain metadata*, then *delete the original file*
 
 This is particularly useful if you like to retain time-stamps for home videos so they are sorted correctly within Digital Asset Management applications like Photos, Lightroom, etc.
 
