@@ -14,11 +14,11 @@
 PRESET=“Universal”
 
 if [ -z "$1" ] ; then
-    CONVERTDIR="."
+    CONVERT_DIR="."
 else
-    CONVERTDIR="$1"
+    CONVERT_DIR="$1"
 fi
 
 
 # Ignores dot files, uses hardcoded file extensions, restores the metadata, then REMOVES original file
-  find "$CONVERTDIR"/*  \( ! -regex '.*/\..*' \) -type f \( -name "*.avi" -or -name "*.AVI" -or -name "*.wmv" -or -name "*.WMV" -or -name "*.3gp" -or -name "*.3g2" \) -exec bash -c 'HandBrakeCLI -i "$1" -o "${1%\.*}"-converted.mp4 --preset="$PRESET" && touch -r "$1" "${1%\.*}"-converted.mp4 && rm "$1"' __$
+  find "$CONVERT_DIR"/*  \( ! -regex '.*/\..*' \) -type f \( -name "*.avi" -or -name "*.AVI" -or -name "*.wmv" -or -name "*.WMV" -or -name "*.3gp" -or -name "*.3g2" \) -exec bash -c 'HandBrakeCLI -i "$1" -o "${1%\.*}"-converted.mp4 --preset="$PRESET" && touch -r "$1" "${1%\.*}"-converted.mp4 && rm "$1"' __$
