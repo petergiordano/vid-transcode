@@ -13,16 +13,16 @@ http://www.surlyjake.com/blog/2010/08/10/script-to-run-handbrake-recursively-thr
 
 # *Back Up your files before running this script*
 
-Usage: `foldermp4convert.sh [*directory_name*]`
+Usage: `foldermp4convert.sh [convert_dir]`
 
-If `directory_name` is not set, script executes in current directory
+If `convert_dir` is not set, script executes in current directory
 
-Edit script and update `*PRESET*` variable to match encoding desired
-If Encoding is not MP4, then consider changing the output filename structure.
+Edit script and update `PRESET` variable to match encoding desired
+If your desired encoding is not `MP4`, then consider changing the output filename structure.
 
 Place script in `/usr/local/scripts` (or your choice)
-Make sure location is in your `$PATH`
-Script assumes HandBrakeCLI is in your `$PATH`
+Make sure `pwd` is in your `$PATH`
+Script assumes `HandBrakeCLI` is in your `$PATH`
 
 
 Handbrake Encoding Presets:
