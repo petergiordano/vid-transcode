@@ -1,4 +1,4 @@
-# vid-transcode
+# foldermp4convert.sh
 Command line script to batch encode AVI and WMV files into MP4 and *retain metadata*
 
 This is particularly useful if you like to retain time-stamps for home videos so they are sorted correctly within Digital Asset Management applications like Photos, Lightroom, etc.
@@ -13,7 +13,7 @@ http://www.surlyjake.com/blog/2010/08/10/script-to-run-handbrake-recursively-thr
 
 # *Back Up your files before running this script*
 
-Usage: `vid-transcode [*directory_name*]`
+Usage: `foldermp4convert.sh [*directory_name*]`
 
 If `*directory_name*` is not set, script executes in current directory
 
