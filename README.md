@@ -13,23 +13,23 @@ http://www.surlyjake.com/blog/2010/08/10/script-to-run-handbrake-recursively-thr
 
 # *Back Up your files before running this script*
 
-Usage: vid-transcode [*directory_name*]
+Usage: `vid-transcode [*directory_name*]`
 
-If *directory_name* is not set, script executes in current directory
+If `*directory_name*` is not set, script executes in current directory
 
-Edit script and update *PRESET* variable to match encoding desired
+Edit script and update `*PRESET*` variable to match encoding desired
 If Encoding is not MP4, then consider changing the output filename structure.
 
-Place script in /usr/local/scripts (or your choice)
-Make sure location is in your $PATH
-Script assumes HandBrakeCLI is in your $PATH
+Place script in `/usr/local/scripts` (or your choice)
+Make sure location is in your `$PATH`
+Script assumes HandBrakeCLI is in your `$PATH`
 
 
 Handbrake Encoding Presets:
 If using HandBrakeCLI, then set PRESET to the encoding option of your choice.
 Change PRESET to specify a different handbrake preset. 
-List HandBrake presets by running: "HandBrakeCLI --preset-list"
-HandBrakeCLI docs are here: https://handbrake.fr/docs/en/latest/cli/cli-guide.html
+List HandBrake presets by running: `HandBrakeCLI --preset-list`
+HandBrakeCLI docs are here: `https://handbrake.fr/docs/en/latest/cli/cli-guide.html`
 
 
 # Warnings
@@ -37,6 +37,6 @@ HandBrakeCLI docs are here: https://handbrake.fr/docs/en/latest/cli/cli-guide.ht
 Back up your files before running this script 
 
 Script is hardcoded to:
-- look for the following filename extensions: *.avi, *.wmv, *.3gp, *.3g2
-- convert to mp4 with *.mp4 filename extension
+- look for the following filename extensions: `*.avi, *.wmv, *.3gp, *.3g2`
+- convert to mp4 with `*.mp4` filename extension
 - append "converted" to the filename
