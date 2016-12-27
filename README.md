@@ -34,7 +34,7 @@ HandBrakeCLI docs are here: `https://handbrake.fr/docs/en/latest/cli/cli-guide.h
 
 # Warnings
 
-Back up your files before running this script 
+# *Back Up your files before running this script*
 
 Script is hardcoded to:
 - look for the following filename extensions: `*.avi, *.wmv, *.3gp, *.3g2`
