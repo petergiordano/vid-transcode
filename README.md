@@ -3,7 +3,8 @@ Command line script to batch encode AVI and WMV files into a new MP4 and *retain
 
 This is particularly useful if you like to retain time-stamps for home videos so they are sorted correctly within Digital Asset Management applications like Photos, Lightroom, etc.
 
-Script recursively traverses a directory structure and converts files that match the find criteria.
+Script recursively traverses a directory structure and converts files that match the find criteria into *new* files with `converted` appeneded to the filename. The script then deletes the original file.
+
 
 Inspiration from SurlyJake
 http://www.surlyjake.com/blog/2010/08/10/script-to-run-handbrake-recursively-through-a-folder-tree/
@@ -40,3 +41,4 @@ Script is hardcoded to:
 - look for the following filename extensions: `*.avi, *.wmv, *.3gp, *.3g2`
 - convert to mp4 with `*.mp4` filename extension
 - append "converted" to the filename
+- delete the original file
