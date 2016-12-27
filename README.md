@@ -1,7 +1,5 @@
 # vid-transcode
-Script to batch encode AVI and WMV files into MP4 and *retain metadata*
-
-Purpose of this script is to batch transcode specific video files with HandBrake CLI - Command Line Interface
+Command line script to batch encode AVI and WMV files into MP4 and *retain metadata*
 
 This is particularly useful if you like to retain time-stamps for home videos so they are sorted correctly within Digital Asset Management applications like Photos, Lightroom, etc.
 
